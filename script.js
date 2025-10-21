@@ -8,8 +8,11 @@ song.onloadedmetadata = function(){
 }
 
 // Update progress bar as song plays
-song.ontimeupdate = function(){
-    progress.value = song.currentTime;
+progress.onchange =function(){
+    song.currentTime = progress.value;
+    song.play();
+    control.classList.remove("fa-play");
+    control.classList.add("fa-pause");
 }
 
 function playPause(){
