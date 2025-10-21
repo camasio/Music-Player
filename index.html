@@ -24,7 +24,7 @@
                 <h2>Camasio</h2>
                 <p>Lionel Richie Ft Lorenzo Guiterrez</p>
 
-                <audio controls>
+                <audio controls id="song">
                     <source src="lionel richie - i call it love.mp3" type="audio/mpeg">
                 </audio>
                 <input type="range" value="0" id="progress">
@@ -32,11 +32,13 @@
           
             <div class="control">
                 <div><i class="fa-solid fa-backward"></i></div>
-                <div><i class="fa-solid fa-play"></i></div>
+                <div onclick="playPause()"><i  class="fa-solid fa-play" id="crtl-icon" ></i></div>
                 <div><i class="fa-solid fa-forward"></i></div>
             </div>
         </div>
+
        
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
